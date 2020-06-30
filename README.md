@@ -1,11 +1,7 @@
-# ORB-SLAM2
-**Authors:** [Raul Mur-Artal](http://webdiis.unizar.es/~raulmur/), [Juan D. Tardos](http://webdiis.unizar.es/~jdtardos/), [J. M. M. Montiel](http://webdiis.unizar.es/~josemari/) and [Dorian Galvez-Lopez](http://doriangalvez.com/) ([DBoW2](https://github.com/dorian3d/DBoW2))
+# Dyn-ORB-SLAM
+**Authors:** [WChenxu2018](https://github.com/WChenxu2018)
 
-**13 Jan 2017**: OpenCV 3 and Eigen 3.3 are now supported.
-
-**22 Dec 2016**: Added AR demo (see section 7).
-
-ORB-SLAM2 is a real-time SLAM library for **Monocular**, **Stereo** and **RGB-D** cameras that computes the camera trajectory and a sparse 3D reconstruction (in the stereo and RGB-D case with true scale). It is able to detect loops and relocalize the camera in real time. We provide examples to run the SLAM system in the [KITTI dataset](http://www.cvlibs.net/datasets/kitti/eval_odometry.php) as stereo or monocular, in the [TUM dataset](http://vision.in.tum.de/data/datasets/rgbd-dataset) as RGB-D or monocular, and in the [EuRoC dataset](http://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets) as stereo or monocular. We also provide a ROS node to process live monocular, stereo or RGB-D streams. **The library can be compiled without ROS**. ORB-SLAM2 provides a GUI to change between a *SLAM Mode* and *Localization Mode*, see section 9 of this document.
+Dyn-ORB-SLAM is a real-time visual SLAM library for **Monocular**, **Stereo** and **RGB-D** which achieve a good result in the dynamic environment. Specifically, we adopt a fast object detection network and we tightly couple the results of the object detection with the geometric information in the SLAM system. We provide examples to run the SLAM system in the [KITTI dataset](http://www.cvlibs.net/datasets/kitti/eval_odometry.php) as stereo or monocular, in the [TUM dataset](http://vision.in.tum.de/data/datasets/rgbd-dataset) as RGB-D. We also provide a ROS node to process live stereo streams. **The library can be compiled without ROS**.
 
 <a href="https://www.youtube.com/embed/ufvPS5wJAx0" target="_blank"><img src="http://img.youtube.com/vi/ufvPS5wJAx0/0.jpg" 
 alt="ORB-SLAM2" width="240" height="180" border="10" /></a>
