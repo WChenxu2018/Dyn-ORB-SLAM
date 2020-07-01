@@ -19,7 +19,7 @@ We test the library in ubuntu16.04 and OpenCV 3.4.8. LibTorch v1.3.1 and cuda ar
 ## Getting started
 - Install ORB-SLAM2 prerequisites: C++11 or C++0x Compiler, Pangolin, OpenCV and Eigen3  (https://github.com/raulmur/ORB_SLAM2).
 - Install LibTorch for the library (https://github.com/pytorch/pytorch).
-- Download the `yolov3.weights` from (https://pjreddie.com/media/files/yolov3.weights and place the `yolov3.weights` model in the folder `Dyn-ORB-SLAM/config/`.
+- Download the `yolov3.weights` from (https://pjreddie.com/media/files/yolov3.weights) and place the `yolov3.weights` model in the folder `Dyn-ORB-SLAM/config/`.
 - Clone this repo:
 ```bash
 git clone https://github.com/WChenxu2018/Dyn-ORB-SLAM
