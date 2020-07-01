@@ -30,7 +30,7 @@ chmod +x build.sh
 
 # 3. Monocular Examples on KITTI Dataset
 
-1. Download the dataset (grayscale and color images) from http://www.cvlibs.net/datasets/kitti/eval_odometry.php. Place the image_0 file of the color image into the grayscale image and rename this file to image_2.
+1. Download the dataset (grayscale images and color images) from http://www.cvlibs.net/datasets/kitti/eval_odometry.php. Place the image_0 file of the color image into the grayscale image file and rename this file to image_2.
 
 2. Execute the following command. Change `KITTIX.yaml`by KITTI00-02.yaml, KITTI03.yaml or KITTI04-12.yaml for sequence 0 to 2, 3, and 4 to 12 respectively. Change `PATH_TO_DATASET_FOLDER` to the uncompressed dataset folder. Change `SEQUENCE_NUMBER` to 00, 01, 02,.., 11. 
 ```
@@ -39,7 +39,7 @@ chmod +x build.sh
 
 # 4. Stereo Examples on KITTI Dataset
 
-1. Download the dataset (grayscale images and color images) from http://www.cvlibs.net/datasets/kitti/eval_odometry.php.  Place the image_0 file of the color image into the grayscale image and rename this file to image_2.
+1. Download the dataset (grayscale images and color images) from http://www.cvlibs.net/datasets/kitti/eval_odometry.php.  Place the image_0 file of the color image into the grayscale image file and rename this file to image_2.
 
 2. Execute the following command. Change `KITTIX.yaml`to KITTI00-02.yaml, KITTI03.yaml or KITTI04-12.yaml for sequence 0 to 2, 3, and 4 to 12 respectively. Change `PATH_TO_DATASET_FOLDER` to the uncompressed dataset folder. Change `SEQUENCE_NUMBER` to 00, 01, 02,.., 11. 
 ```
@@ -64,7 +64,7 @@ chmod +x build.sh
 
 # 6. ROS Examples
 
-### Building the nodes for stereo 
+## Building the nodes for stereo 
 1. Add the path including *Examples/ROS/ORB_SLAM2* to the ROS_PACKAGE_PATH environment variable. Open .bashrc file and add at the end the following line. Replace PATH by the folder where you cloned Dyn-ORB-SLAM:
 
   ```
@@ -78,7 +78,7 @@ chmod +x build.sh
   ./build_ros.sh
   ```
   
-### Running Stereo Node
+## Running Stereo Node
 For a stereo input from topic `/camera/left/image_raw` and `/camera/right/image_raw` run node ORB_SLAM2/Stereo. You will need to provide the vocabulary file and a settings file. If you **provide rectification matrices** (see Examples/Stereo/EuRoC.yaml example), the node will recitify the images online, **otherwise images must be pre-rectified**.
 
   ```
@@ -88,9 +88,9 @@ For a stereo input from topic `/camera/left/image_raw` and `/camera/right/image_
 # 7. SLAM and Localization Modes
 You can change between the *SLAM* and *Localization mode* using the GUI of the map viewer.
 
-### SLAM Mode
+## SLAM Mode
 This is the default mode. The system runs in parallal three threads: Tracking, Local Mapping and Loop Closing. The system localizes the camera, builds new map and tries to close loops.
 
-### Localization Mode
+## Localization Mode
 This mode can be used when you have a good map of your working area. In this mode the Local Mapping and Loop Closing are deactivated. The system localizes the camera in the map (which is no longer updated), using relocalization if needed. 
 
