@@ -1682,7 +1682,7 @@ int ORBmatcher::NewSearchByProjection(ORB_SLAM2::Frame &CurrentFrame, const ORB_
     else{
         sort(v.begin(), v.end());
         int len=v.size();
-        judge=v[len/12];
+        judge=v[len/5];
     }
 
     for(int i=0; i<LastFrame.N; i++) {
