@@ -14,7 +14,7 @@ Dyn-ORB-SLAM is built on ORB_SLAM2. ORB-SLAM2 is released under a [GPLv3 license
 
 
 # 2. Prerequisites
-We test the library in ubuntu16.04 and OpenCV 3.4.8. LibTorch v1.3.1 and cuda are required for the project.
+We test the library in ubuntu16.04 and OpenCV 3.4.8. LibTorch and cuda are required for the project.
 
 ## Getting started
 - Install ORB-SLAM2 prerequisites: C++11 or C++0x Compiler, Pangolin, OpenCV and Eigen3  (https://github.com/raulmur/ORB_SLAM2).
