@@ -28,7 +28,7 @@ chmod +x build.sh
 ./build.sh
 ```
 
-# 3. Monocular Examples on KITTI Dataset
+# 3. Monocular Example on KITTI Dataset
 
 1. Download the dataset (grayscale images and color images) from http://www.cvlibs.net/datasets/kitti/eval_odometry.php. Place the image_0 file of the color image into the grayscale image folder and rename this file to image_2.
 
@@ -37,7 +37,7 @@ chmod +x build.sh
 ./Examples/Monocular/mono_kitti Vocabulary/ORBvoc.txt Examples/Monocular/KITTIX.yaml PATH_TO_DATASET_FOLDER/dataset/sequences/SEQUENCE_NUMBER
 ```
 
-# 4. Stereo Examples on KITTI Dataset
+# 4. Stereo Example on KITTI Dataset
 
 1. Download the dataset (grayscale images and color images) from http://www.cvlibs.net/datasets/kitti/eval_odometry.php.  Place the image_0 file of the color image into the grayscale image folder and rename this file to image_2.
 
@@ -62,7 +62,7 @@ chmod +x build.sh
   ./Examples/RGB-D/rgbd_tum Vocabulary/ORBvoc.txt Examples/RGB-D/TUMX.yaml PATH_TO_SEQUENCE_FOLDER ASSOCIATIONS_FILE
   ```
 
-# 6. ROS Examples
+# 6. ROS Example
 
 ## Building the nodes for stereo 
 1. Add the path including *Examples/ROS/ORB_SLAM2* to the ROS_PACKAGE_PATH environment variable. Open .bashrc file and add at the end the following line. Replace PATH by the folder where you cloned Dyn-ORB-SLAM:
